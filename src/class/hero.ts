@@ -51,9 +51,15 @@ export class Hero {
 
 
     //Methods
-    // public attack(hero: Hero) {
-    //     let punch: number = attaque du Hero - defense du hero
-    // }
+    public attack(defender: Hero) {
+        this._defense;
+       
+        // console.log(defender.Defense);
+        let damage = Math.floor(Math.random() * (this._weapon.MaxAttack - this._weapon.MinAttack + 1)) + this._weapon.MinAttack;
+        let shot = damage - defender.Defense <= 0 ? 0 : damage - defender.Defense;
+        defender.Pv = defender.Pv - shot ;
+        console.log(this.Name + " attaque " + defender.Name + " et fait " + shot + " dégats. Il reste " + defender.Pv + " à " + defender.Name);
+    }
 
 
 
