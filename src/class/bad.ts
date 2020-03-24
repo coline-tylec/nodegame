@@ -1,4 +1,4 @@
-class Good extends Hero { // extends
+class Bad extends Hero { // extends
     // variables d'instance
 
     // constructeur
