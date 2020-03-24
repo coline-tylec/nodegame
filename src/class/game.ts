@@ -1,19 +1,18 @@
-export class Partie {
+export class Game {
 
     //variable d'instance
-      tabHeros : string[] = ["toto", "tata", "Billy"];
-      tabMechants : string[] = ["ogre", "gobelin", 'orque'];
+    private tabHeros : string[] = ["toto", "tata", "Billy"];
+    private tabMechants : string[] = ["ogre", "gobelin", 'orque'];
 
     constructor(){
 
     }
 
-    /
-     * Methode lancement de la partie 
-     * @return 
-     /
-    newPartie = () => {
-        /const readline = require('readline');
+    // Methode lancement de la partie 
+    // @return 
+
+    newGame = () => {
+        const readline = require('readline');
         const lancementPartie = readline.createInterface({
             input: process.stdin,
             output: process.stdout
@@ -23,13 +22,13 @@ export class Partie {
         } else {
             const reponse = console.log("retour a la question")
         }
-        return reponse;*/
+        return reponse;
     }
 
-    /
-     * Methode creation du méchant 
-     * @return 
-     */
+
+    // Methode creation du méchant 
+    // @return 
+
     createMechant = () => {
         return console.log("test lien index");
 
